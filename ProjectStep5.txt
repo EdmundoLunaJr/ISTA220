@@ -1,0 +1,93 @@
+USE [Coverage]
+GO
+
+/****** Object:  Table [dbo].[CustomerData]    Script Date: 8/3/2019 1:19:58 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[CustomerData](
+	[CustomerFirstName] [nchar](10) NULL,
+	[CustomerLastName] [nchar](10) NULL,
+	[CustomerMiddleInitial] [nchar](10) NULL,
+	[CustomerEmailAdress] [nchar](10) NULL,
+	[CustomerPhoneNumber] [nchar](10) NULL,
+	[Street/PO line 1] [nchar](10) NULL,
+	[Street (if needed) line 2] [nchar](10) NULL,
+	[City] [nchar](10) NULL,
+	[State] [nchar](10) NULL,
+	[Zip] [nchar](10) NULL,
+	[PreferredMethodToBeContact] [nchar](10) NULL
+) ON [PRIMARY]
+GO
+
+
+
+----------------------------------------------------------------------------------------------------------------
+
+USE [Coverage]
+GO
+
+/****** Object:  Table [dbo].[ProductData]    Script Date: 8/3/2019 1:20:42 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[ProductData](
+	[Item Name] [nchar](10) NULL,
+	[Date of Purchase] [nchar](10) NULL,
+	[Place of Sale] [nchar](10) NULL,
+	[Purchase Price] [nchar](10) NULL,
+	[Manufacture Name] [nchar](10) NULL
+) ON [PRIMARY]
+GO
+
+
+
+
+----------------------------------------------------------------------------------------------------------------
+
+USE [Coverage]
+GO
+
+/****** Object:  Table [dbo].[ManufactureData]    Script Date: 8/3/2019 1:20:15 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[ManufactureData](
+	[ManufactureName] [nchar](10) NULL,
+	[ManufactureMainURL] [nchar](10) NULL,
+	[ManufacturePhoneNumber] [nchar](10) NULL,
+	[ManufactureCSupportEmailAddress] [nchar](10) NULL,
+	[ManufactureWarrantyURL] [nchar](10) NULL
+) ON [PRIMARY]
+GO
+
+-------------------------------------------------------------------------------------------------------------------
+
+USE [Coverage]
+GO
+
+/****** Object:  Table [dbo].[WarrantyData]    Script Date: 8/3/2019 2:40:03 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[WarrantyData](
+	[Coverage Policy Number] [nchar](10) NULL,
+	[Manufacture Name] [nchar](10) NULL,
+	[Warranty Start Date] [nchar](10) NULL,
+	[Warranty Expiration Date] [nchar](10) NULL,
+	[Preferred Method To Be Contact] [nchar](10) NULL
+) ON [PRIMARY]
+GO
+
